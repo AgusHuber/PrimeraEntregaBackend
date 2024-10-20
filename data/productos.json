@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "title": "Laptop Gamer",
+      "description": "Laptop con procesador Intel i7 y tarjeta gráfica RTX 3060.",
+      "code": "LAP123",
+      "price": 1200,
+      "status": true,
+      "stock": 15,
+      "category": "Tecnología",
+      "thumbnails": [
+        "https://example.com/images/laptop1.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Smart TV 55 pulgadas",
+      "description": "Televisor 4K con soporte HDR y aplicaciones preinstaladas.",
+      "code": "TV789",
+      "price": 800,
+      "status": true,
+      "stock": 10,
+      "category": "Electrodomésticos",
+      "thumbnails": [
+        "https://example.com/images/tv.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Consola de videojuegos",
+      "description": "Nueva generación con soporte 8K y almacenamiento SSD.",
+      "code": "CON012",
+      "price": 500,
+      "status": true,
+      "stock": 25,
+      "category": "Videojuegos",
+      "thumbnails": [
+        "https://example.com/images/consola.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "status": true,
+      "title": "Laptop",
+      "description": "Laptop de alta gama",
+      "code": "LP001",
+      "price": 1500,
+      "stock": 20,
+      "category": "Electronics",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    },
+    {
+      "id": 6,
+      "status": true,
+      "title": "Laptop",
+      "description": "Laptop de alta gama",
+      "code": "LP001",
+      "price": 1500,
+      "stock": 20,
+      "category": "Electronics",
+      "thumbnails": [
+        "url1",
+        "url2"
+      ]
+    }
+  ]
