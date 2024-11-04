@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">{{message}}</h1>
+        <h2 class="mt-4">Lista de Productos</h2>
+        <ul class="list-group">
+            {{#each productos}}
+                <li class="list-group-item">
+                    <strong>Nombre:</strong> {{this.name}} <br>
+                    <strong>Precio:</strong> ${{this.price}} <br>
+                    <strong>Estado:</strong> {{#if this.status}}<span class="badge badge-success">Disponible</span>{{else}}<span class="badge badge-danger">No disponible</span>{{/if}}
+                </li>
+            {{else}}
+                <li class="list-group-item">No hay productos disponibles.</li>
+            {{/each}}
+        </ul>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/socketClient.js"></script>
+    
+    <!-- Enlace a los scripts de Bootstrap (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

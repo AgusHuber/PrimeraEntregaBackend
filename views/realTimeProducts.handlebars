@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-success">{{message}}</h1>
+        <h2>Lista de Productos</h2>
+        <ul id="productList" class="list-group">
+            {{#each productos}}
+                <li class="list-group-item">
+                    <strong>ID:</strong> {{this.id}} <br>
+                    <strong>Nombre:</strong> {{this.name}} <br>
+                    <strong>Precio:</strong> {{this.price}} <br>
+                    <strong>Estado:</strong> {{#if this.status}} Disponible {{else}} No disponible {{/if}}
+                    <button onclick="deleteProduct({{this.id}})" class="btn btn-danger">Eliminar</button>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/socketClient.js"></script>
+</body>
+</html>

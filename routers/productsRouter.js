@@ -6,6 +6,12 @@ import { ProductsManager } from '../managers/productsManager.js';
 const router = Router();
 const productsManager = new ProductsManager('./data/productos.json');
 
+//integro io como variable global para poder ser utilizada.
+let io;
+export const setSocketIo = (socketIo) => {
+    io = socketIo;
+};
+
 //Ruta para obtener los productos, con un limite de productos.
 router.get('/',async(req, res)=>{
     try{
@@ -38,6 +44,11 @@ router.post('/', async (req, res) => {
     }
 
     const newProduct = await productsManager.addProduct(req.body);
+    const productos = await productsManager.getProducts();
+
+    //agrego el evento para que se actualicen los productos en tiempo real.
+    req.serverSocket.emit('updateProducts', productos);
+
     res.status(201).json(newProduct);
 
     } catch (error) {
@@ -60,6 +71,9 @@ router.put('/:pid', async (req, res) => {
 router.delete('/:pid', async (req, res) => {
     try {
         const product = await productsManager.deleteProduct(parseInt(req.params.pid));
+
+        //agrego el evento para que se actualicen los productos en tiempo real.
+        req.serverSocket.emit('updateProducts', await productsManager.getProducts());
         return res.status(200).json(product);
     } catch (error) {
         return res.status(500).json({error: 'Error al eliminar el producto'})
