@@ -9,6 +9,7 @@ import { engine } from 'express-handlebars';
 import { ProductsManager } from './managers/productsManager.js';
 import viewsRouter from './routers/viewsRouter.js';
 import { setSocketIo } from './routers/productsRouter.js';
+import connectDB from './db.js';
 
 //defino io como variable global.
 let io;
@@ -17,12 +18,20 @@ let io;
 const app = express();
 const PORT = 8080;
 
+//Conectar a MongoDB
+connectDB();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 
 // Configuración de handlebars
-app.engine("handlebars", engine());
+app.engine("handlebars", engine({
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+        allowProtoMethodsByDefault: true
+    }
+}));
 app.set("view engine", "handlebars");
 app.set("views", "./views");
 
@@ -48,6 +57,7 @@ app.get('/home', async (req, res) => {
     } 
 });
 
+
 // Rutas para API
 app.use('/api/products', (req, res, next) => {
     req.serverSocket = io;
@@ -65,3 +75,4 @@ io.on("connection", socket => {
         io.emit('updateProducts', productos);
     });
 });
+
