@@ -13,7 +13,14 @@ Este proyecto es una tienda en línea construida con **Node.js**, **Express**, *
 
 ## Instalacion de dependencias necesarias
 
-npm install express express-handlebars mongo mongodb mongoose mongoose-paginate-v2 nodemon socket.io
+**npm run setup**
+instala todas las dependencias necesarias.
+
+## Inicio de la API
+
+**Scripts**
+**npm run dev**: Inicia el servidor en modo desarrollo con nodemon.
+**npm start**: Inicia el servidor en modo producción.
 
 
 ## Endpoint de la API
@@ -36,11 +43,6 @@ npm install express express-handlebars mongo mongodb mongoose mongoose-paginate-
 **DELETE** /api/carts/:cid/products/:pid: Eliminar un producto del carrito.
 **DELETE** /api/carts/:cid: Vaciar el carrito.
 
-## Inicio de la API
-
-**Scripts**
-**npm run dev**: Inicia el servidor en modo desarrollo con nodemon.
-**npm start**: Inicia el servidor en modo producción.
 
 ## Rutas de las vistas
 
