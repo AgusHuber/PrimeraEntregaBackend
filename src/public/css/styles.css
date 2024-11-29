@@ -1,0 +1,142 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f8ff; 
+    color: #2f4f4f; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #1e90ff; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #4682b4; 
+    text-decoration: underline;
+  }
+  
+  h1,
+  h2 {
+    color: #1c1c1c; 
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button,
+  .btn {
+    background-color: #4682b4; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: #1e90ff; 
+  }
+  
+  .nav-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    border: 1px solid #4682b4; 
+    border-radius: 5px;
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #4682b4; 
+    color: #ffffff;
+  }
+  
+  .cart-container,
+  .products-container,
+  .product-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #4682b4; 
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    margin: 0 5px;
+    color: #1e90ff; 
+  }
+  
+  .pagination a:hover {
+    color: #4682b4; 
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #dcdcdc; 
+    border-radius: 5px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #1e90ff; 
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+  }
+  
+  .sort-links-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center; 
+  }
+  
+  .sort-links-container a {
+    margin: 10px 0;          
+    color: #1e90ff;          
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sort-links-container a:hover {
+    color: #4682b4;         
+  }

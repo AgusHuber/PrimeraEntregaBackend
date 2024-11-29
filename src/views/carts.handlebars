@@ -1,0 +1,55 @@
+<body>
+  <div class="cart-container">
+    <a href="/" class="home-link">Pagina Principal</a>
+    <hr />
+    <h1>
+      Carrito - ID: 
+      <form 
+        action="/carts/" 
+        method="GET" 
+        style="display: inline;" 
+        onsubmit="redirectToCart(event)"
+      >
+        <input 
+          type="text" 
+          id="cartIdInput" 
+          placeholder="Ingrese el ID del carrito" 
+          style="width: 200px; padding: 5px; border-radius: 5px; border: 1px solid #e0dcd5;"
+          required
+        />
+        <button 
+          type="submit" 
+          class="btn"
+          style="padding: 5px 10px; margin-left: 10px;"
+        >Buscar</button>
+      </form>
+    </h1>
+    <hr />
+
+    {{#if products.length}}
+      <ul>
+        {{#each products}}
+          <li>
+            <span class="product-name">{{this.product.title}}</span>
+            <span class="product-price">${{this.product.price}}</span>
+            <span class="quantity">{{this.quantity}} unidades</span>
+          </li>
+        {{/each}}
+      </ul>
+      <p>Total: ${{totalPrice}}</p>
+      <button class="btn" onclick="window.location.href='/checkout'">Checkout</button>
+    {{else}}
+      <p class="empty-cart">Tu carrito esta vacio, agregue productos a el carrito o ingrese otro carrito.</p>
+    {{/if}}
+  </div>
+
+  <script>
+    function redirectToCart(event) {
+      event.preventDefault(); 
+      const cartId = document.getElementById("cartIdInput").value;
+      if (cartId) {
+        window.location.href = `/carts/${cartId}`;
+      }
+    }
+  </script>
+</body>

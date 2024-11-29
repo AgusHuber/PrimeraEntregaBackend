@@ -1,0 +1,49 @@
+
+<a href="/" class="home-link">Pagina Principal</a>
+<hr />
+<h1>Lista de productos</h1>
+<div class="products-container">
+  <form action="/products" method="GET">
+    <label for="query">Filtrar por categoria:</label>
+    <input type="text" id="query" name="query" placeholder="Ingrese la categoria" value="{{query}}">
+    <button type="submit">Filtrar</button>
+  </form>
+  <ul>
+    {{#each products}}
+      <li>
+        <h2>{{title}}</h2>
+        <p>Precio: ${{price}}</p>
+        <p>Categoria: {{category}}</p>
+        <a href="/products/{{_id}}">Ver mas detalles</a>
+        <form action="/api/carts/{{../cartId}}/products/{{_id}}" method="POST">
+          <button type="submit">Agregar al carrito</button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+
+<div class="sort-links-container">
+  <a href="/products?sort=asc&page={{page}}&limit={{limit}}&query={{query}}">
+    Ordenar por precio ascendente
+  </a>
+  <a href="/products?sort=desc&page={{page}}&limit={{limit}}&query={{query}}">
+    Ordenar por precio descendente
+  </a>
+</div>
+
+<div class="pagination">
+  {{#if hasPrevPage}}
+    <a href="/products?page={{prevPage}}&limit={{limit}}&sort={{sort}}&query={{query}}">
+      Anterior
+    </a>
+  {{/if}}
+
+  <span>Pagina {{page}} de {{totalPages}}</span>
+
+  {{#if hasNextPage}}
+    <a href="/products?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{query}}">
+      Siguiente
+    </a>
+  {{/if}}
+</div>
