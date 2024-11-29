@@ -1,7 +1,7 @@
 {
-  "name": "primeraentregabackend",
+  "name": "Proyecto Backend Coderhouse",
   "version": "1.0.0",
-  "description": "PrimeraEntregaCoderhouseBackend",
+  "description": "Proyecto Backend Coderhouse",
   "main": "index.js",
   "type": "module",
   "scripts": {
