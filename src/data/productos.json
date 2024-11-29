@@ -1,69 +1,123 @@
 [
-    {
-      "id": 1,
-      "title": "Laptop Gamer",
-      "description": "Laptop con procesador Intel i7 y tarjeta gráfica RTX 3060.",
-      "code": "LAP123",
-      "price": 1200,
-      "status": true,
-      "stock": 15,
-      "category": "Tecnología",
-      "thumbnails": [
-        "https://example.com/images/laptop1.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Smart TV 55 pulgadas",
-      "description": "Televisor 4K con soporte HDR y aplicaciones preinstaladas.",
-      "code": "TV789",
+  {
+    "_id": "6748da103ace03259105a5fa",
+    "title": "Laptop Gaming",
+    "description": "Laptop de alto rendimiento para juegos",
+    "code": "LG1234",
+    "price": 1200,
+    "stock": 50,
+    "category": "Electrónica",
+    "thumbnails": [
+        "https://example.com/laptop1.jpg"
+    ]
+  },
+
+  {
+      "_id": "6748da1f3ace03259105a5fd",
+      "title": "Smartphone",
+      "description": "Smartphone con cámara de alta calidad y pantalla OLED",
+      "code": "SP5678",
       "price": 800,
-      "status": true,
-      "stock": 10,
-      "category": "Electrodomésticos",
+      "stock": 100,
+      "category": "Electrónica",
       "thumbnails": [
-        "https://example.com/images/tv.jpg"
+          "https://example.com/phone1.jpg"
       ]
-    },
-    {
-      "id": 4,
-      "title": "Consola de videojuegos",
-      "description": "Nueva generación con soporte 8K y almacenamiento SSD.",
-      "code": "CON012",
-      "price": 500,
-      "status": true,
+  },
+  {
+      "_id": "6748da263ace03259105a600",
+      "title": "Auriculares Inalámbricos",
+      "description": "Auriculares bluetooth con cancelación de ruido",
+      "code": "AU1122",
+      "price": 150,
+      "stock": 200,
+      "category": "Accesorios",
+      "thumbnails": [
+          "https://example.com/headphones1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da2c3ace03259105a603",
+      "title": "Teclado Mecánico",
+      "description": "Teclado mecánico para gaming con retroiluminación RGB",
+      "code": "TK3345",
+      "price": 100,
+      "stock": 75,
+      "category": "Accesorios",
+      "thumbnails": [
+          "https://example.com/keyboard1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da323ace03259105a606",
+      "title": "Monitor 4K",
+      "description": "Monitor de 27 pulgadas con resolución 4K y tecnología HDR",
+      "code": "MN6677",
+      "price": 400,
+      "stock": 30,
+      "category": "Electrónica",
+      "thumbnails": [
+          "https://example.com/monitor1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da383ace03259105a609",
+      "title": "Cámara DSLR",
+      "description": "Cámara profesional con lentes intercambiables",
+      "code": "DSLR890",
+      "price": 1500,
+      "stock": 40,
+      "category": "Fotografía",
+      "thumbnails": [
+          "https://example.com/camera1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da3e3ace03259105a60c",
+      "title": "Zapatos Deportivos",
+      "description": "Zapatos deportivos de alta calidad para correr",
+      "code": "ZD9876",
+      "price": 75,
+      "stock": 120,
+      "category": "Ropa y Calzado",
+      "thumbnails": [
+          "https://example.com/shoes1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da443ace03259105a60f",
+      "title": "Camiseta Básica",
+      "description": "Camiseta de algodón 100% en varios colores",
+      "code": "CB4321",
+      "price": 20,
+      "stock": 300,
+      "category": "Ropa",
+      "thumbnails": [
+          "https://example.com/tshirt1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da4a3ace03259105a612",
+      "title": "Reloj Inteligente",
+      "description": "Reloj inteligente con monitoreo de salud y actividad física",
+      "code": "RI7539",
+      "price": 250,
+      "stock": 80,
+      "category": "Accesorios",
+      "thumbnails": [
+          "https://example.com/watch1.jpg"
+      ]
+  },
+  {
+      "_id": "6748da4f3ace03259105a615",
+      "title": "Bicicleta de Montaña",
+      "description": "Bicicleta de montaña con suspensión de calidad y marco de aluminio",
+      "code": "BM1112",
+      "price": 600,
       "stock": 25,
-      "category": "Videojuegos",
+      "category": "Deportes",
       "thumbnails": [
-        "https://example.com/images/consola.jpg"
+          "https://example.com/bike1.jpg"
       ]
-    },
-    {
-      "id": 5,
-      "status": true,
-      "title": "Laptop",
-      "description": "Laptop de alta gama",
-      "code": "LP001",
-      "price": 1500,
-      "stock": 20,
-      "category": "Electronics",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    },
-    {
-      "id": 6,
-      "status": true,
-      "title": "Laptop",
-      "description": "Laptop de alta gama",
-      "code": "LP001",
-      "price": 1500,
-      "stock": 20,
-      "category": "Electronics",
-      "thumbnails": [
-        "url1",
-        "url2"
-      ]
-    }
-  ]
+  }
+]

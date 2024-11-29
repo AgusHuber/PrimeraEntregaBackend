@@ -1,57 +1,36 @@
 [
   {
-    "id": 1,
+    "_id": "6748dda408d2ecc9dcb2b7e9",
     "products": [
-      {
-        "product": 3,
-        "quantity": 2
-      }
+        {
+            "product": "6748da1f3ace03259105a5fd",
+            "quantity": 2,
+            "_id": "67492e5da573f0cf0a6fb368"
+        },
+        {
+            "product": "6748da263ace03259105a600",
+            "quantity": 1,
+            "_id": "67492e68a573f0cf0a6fb36d"
+        },
+        {
+            "product": "6748da323ace03259105a606",
+            "quantity": 1,
+            "_id": "67492e71a573f0cf0a6fb37e"
+        }
     ]
   },
   {
-    "id": 2,
-    "products": [
-      {
-        "product": 2,
-        "quantity": 5
-      },
-      {
-        "product": 3,
-        "quantity": 5
-      }
-    ]
+    "_id": "6748ddac08d2ecc9dcb2b7eb",
+    "products": [],
+    "createdAt": "2024-11-28T21:16:28.345Z",
+    "updatedAt": "2024-11-28T21:16:28.345Z",
+    "__v": 0
   },
   {
-    "id": 3,
-    "products": [
-      {
-        "product": 3,
-        "quantity": 3
-      },
-      {
-        "product": 1,
-        "quantity": 2
-      },
-      {
-        "product": 4,
-        "quantity": 2
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "products": []
-  },
-  {
-    "id": 5,
-    "products": []
-  },
-  {
-    "id": 6,
-    "products": []
-  },
-  {
-    "id": 7,
-    "products": []
+    "_id": "6748ddad08d2ecc9dcb2b7ed",
+    "products": [],
+    "createdAt": "2024-11-28T21:16:29.233Z",
+    "updatedAt": "2024-11-28T21:16:29.233Z",
+    "__v": 0
   }
 ]
